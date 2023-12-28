@@ -3,3 +3,13 @@ spring:
     active: ${activeProfile:dev}
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
+
+
+management:
+  endpoint:
+    health:
+      group:
+        readiness:
+          show-components: always
+        liveness:
+          show-components: always
