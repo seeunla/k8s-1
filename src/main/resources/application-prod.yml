@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://${prodDbIp}:${prodDbPort}/${prodDbName}?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    username: ${prodDbId}
+    password: ${prodDbPw}
+  jpa:
+    hibernate:
+      ddl-auto: update
